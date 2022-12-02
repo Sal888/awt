@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Home Page</h1>
+<form method="post" enctype="multipart/form-data" id="upload_form">
+  <input type="file" name="file" id="file">
+  <progress id="progress_bar" value="0" max="100"></progress>
+  <input type="button" value="Submit" id="submit-btn">
+  <p>Link goes here</p>
+</form>
+<script src="static/js/upload.js" defer></script>
+{% endblock %}
